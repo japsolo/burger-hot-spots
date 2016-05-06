@@ -9,7 +9,10 @@
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700%7CBitter:700);
 body {
   font-family: "Oxygen";
-  margin: 0; }
+  margin: 0 5%; }
+  body ul, body li {
+    decoration: none;
+    margin: none; }
 
 h1, h2 {
   font-family: "Bitter";
@@ -25,6 +28,10 @@ a {
 /************************************ */
 /*=========     GLOBAL     ========= */
 /********************************** */
+#banner, #services, #top6 {
+  padding: 100px 0;
+  margin: 0 0; }
+
 header figure {
   display: inline-block;
   border: none;
@@ -41,13 +48,93 @@ header figure {
   background-color: #ec232d;
   border: none;
   max-height: 50px; }
+  .navbar-default .navbar-brand {
+    color: #ec232d;
+    font-family: "Bitter"; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand:focus {
+      color: #ec232d !important; }
+  .navbar-default .navbar-toggle {
+    border: none;
+    background-color: #ec232d;
+    color: #fff; }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
+      background: #ec232d !important; }
+  .navbar-default .navbar-nav > li > a {
+    font-family: "Bitter";
+    color: #fff;
+    text-transform: uppercase; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+      color: #ec232d !important; }
+  .navbar-default .navbar-nav > .active > a {
+    color: #fae100;
+    background-color: transparent !important; }
+
+/************************************ */
+/*=========     BANNER     ========= */
+/********************************** */
+#banner {
+  height: 160px;
+  background-color: #E35959;
+  /*solo para que ocupe algo */ }
 
 /************************************** */
 /*=========     SERVICES     ========= */
 /************************************ */
+#services {
+  background-color: #CB5B38;
+  /*solo para ver */ }
+  #services .glyphicon {
+    width: 115px;
+    height: 115px;
+    background-color: #fae100;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    line-height: 115px;
+    color: #fff !important;
+    font-size: 50px !important; }
+
+.item-subtitle {
+  color: #9f2226;
+  font-size: 20px; }
+  .item-subtitle + p {
+    font-family: "Oxygen";
+    line-height: 25px;
+    margin-bottom: 30px; }
+
 /*************************************** */
-/*=========     PORTFOLIO     ========= */
+/*=========     TOP 6     ========= */
 /************************************* */
+.img-menu {
+  margin: 0 auto 40px;
+  max-width: 400px; }
+  .img-menu figure {
+    position: relative; }
+    .img-menu figure div {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(254, 209, 54, 0.8);
+      opacity: 0;
+      transition: 500ms;
+      -ms-transition: 500ms;
+      -webkit-transition: 500ms; }
+      .img-menu figure div span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: #fff;
+        font-size: 50px;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 300ms;
+        -ms-transition: 300ms;
+        -webkit-transition: 300ms; }
+    .img-menu figure:hover div {
+      opacity: 1; }
+      .img-menu figure:hover div span {
+        transform: translate(-50%, -50%) scale(1); }
+
 /*********************************** */
 /*=========     ABOUT     ========= */
 /********************************* */
