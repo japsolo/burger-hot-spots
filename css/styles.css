@@ -28,14 +28,12 @@ a {
 /************************************ */
 /*=========     GLOBAL     ========= */
 /********************************** */
-#banner, #services, #top6 {
-  padding: 100px 0;
-  margin: 0 0; }
+#services, #top6 {
+  padding: 100px 0; }
 
 header figure {
   display: inline-block;
   border: none;
-  margin: 0 0 0 5%;
   width: 50px;
   height: 50px; }
   header figure img {
@@ -69,19 +67,28 @@ header figure {
     color: #fae100;
     background-color: transparent !important; }
 
+#nav-links {
+  display: none; }
+
+.mapa {
+  min-height: 300px; }
+
 /************************************ */
 /*=========     BANNER     ========= */
 /********************************** */
 #banner {
-  height: 160px;
   background-color: #E35959;
+  min-height: 300px;
+  margin-top: 50px;
+  padding-top: 25px;
   /*solo para que ocupe algo */ }
 
 /************************************** */
 /*=========     SERVICES     ========= */
 /************************************ */
 #services {
-  background-color: #CB5B38;
+  /*	Para probar como queda sin fondo */
+  /* background-color: #CB5B38 */
   /*solo para ver */ }
   #services .glyphicon {
     width: 115px;
@@ -109,6 +116,8 @@ header figure {
   max-width: 400px; }
   .img-menu figure {
     position: relative; }
+    .img-menu figure img {
+      width: 100%; }
     .img-menu figure div {
       position: absolute;
       left: 0;

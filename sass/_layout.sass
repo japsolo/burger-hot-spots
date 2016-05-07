@@ -3,19 +3,17 @@
 /***********************************/
 %contenedores
 	padding: 100px 0
-	margin: 0 0
 
 header
 	figure
 		display: inline-block
 		border: none
-		margin: 0 0 0 5%
 		width: 50px
 		height: 50px
 		img
 			width: 100%
 
-	
+
 
 /*************************************/
 /*=========     HEADER     =========*/
@@ -28,7 +26,7 @@ header
 
 	.navbar-brand
 		color: $main-color
-		font-family: $second-font 
+		font-family: $second-font
 		&:hover,
 		&:active,
 		&:focus
@@ -58,20 +56,28 @@ header
 				color: $second-color
 				background-color: transparent !important
 
+#nav-links
+	display: none
+
+.mapa
+	min-height: 300px
+
 /*************************************/
 /*=========     BANNER     =========*/
 /***********************************/
 #banner
-	@extend %contenedores
-	height: 160px
 	background-color: #E35959
+	min-height: 300px
+	margin-top: 50px
+	padding-top: 25px
 	/*solo para que ocupe algo*/
 /***************************************/
 /*=========     SERVICES     =========*/
 /*************************************/
 #services
 	@extend %contenedores
-	background-color: #CB5B38
+	/*	Para probar como queda sin fondo */
+	/* background-color: #CB5B38 */
 	/*solo para ver*/
 	.glyphicon
 		width: 115px
@@ -101,6 +107,8 @@ header
 	max-width: 400px
 	figure
 		position: relative
+		img
+			width: 100%
 		div
 			position: absolute
 			left: 0
