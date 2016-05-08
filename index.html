@@ -7,9 +7,15 @@
 	<!-- bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- font  -->
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+
 	<!-- our-own-styles -->
 	<link rel="stylesheet" href="css/styles.css">
+	<!-- mapa -->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+ 	<title>Google Maps Multiple Markers</title> 
+  	<script src="http://maps.google.com/maps/api/js?sensor=false" 
+          type="text/javascript"></script>
 </head>
 
 <body>
@@ -50,35 +56,39 @@
 		</div>
 	</header>
 
-	<section class="container" id="banner">
-		<div class="row">
-			<div class="col-xs-12">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3285.6390264811607!2d-58.454185976406166!3d-34.56269391937092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xedd3483149685e17!2sMuseo+de+Arte+Espa%C3%B1ol+Enrique+Larreta!5e0!3m2!1ses-419!2sus!4v1462644367056" width="100%" height="300" frameborder="0" style="border:0"></iframe>
-			</div>
-		</div>
-	</section>
+	<section id="map" class="container-fluid"></section>
+
 
 	<section class="container" id="services">
+
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<h2 class="section-title">Services</h2>
+				<p class="text-muted">Lorem ipsum dolor sit amet consectotut.</p>
+			</div>
+		</div>
+
 		<div class="row">
 			<div class="col-md-4 text-center">
 				<i class="glyphicon glyphicon glyphicon-ok"></i>
-				<h2 class="item-subtile">Registration</h2>
+				<h3 class="item-subtitle">Registration</h3>
 				<p class="text-muted">Lorem ipsum dolor sit amet consectetur orem ipsum dolor sit amet consectetur orem ipsum dolor sit amet consectetur</p>
 			</div>
 			<div class="col-md-4 text-center">
 				<i class="glyphicon glyphicon glyphicon-cutlery"></i>
-				<h2 class="item-subtile">Places</h2>
+				<h3 class="item-subtitle">Places</h3>
 				<p class="text-muted">Lorem ipsum dolor sit amet consectetur orem ipsum dolor sit amet consectetur orem ipsum dolor sit amet consectetur</p>
 			</div>
 			<div class="col-md-4 text-center">
 				<i class="glyphicon glyphicon glyphicon-star"></i>
-				<h2 class="item-subtile">Ranking</h2>
+				<h3 class="item-subtitle">Ranking</h3>
 				<p class="text-muted">Lorem ipsum dolor sit amet consectetur orem ipsum dolor sit amet consectetur orem ipsum dolor sit amet consectetur</p>
 			</div>
 		</div>
 	</section>
 
 	<section class="container" id="top6">
+		
 		<div class="row text-center">
 			<dvi class="col-xs-12">
 				<h2 class="section-title">Top 6!</h2>
@@ -164,10 +174,72 @@
 	</section>
 
 	<section class="container" id="about">
+		<div class="row text-center">
+			<dvi class="col-xs-12">
+				<h2 class="section-title">About</h2>
+			</dvi>
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officiis esse repudiandae, rem nisi itaque! A fugit dolore hic, iure fuga incidunt eius, sunt est beatae praesentium, impedit libero rem!</p>
+			</div>
+		</div>
 
 	</section>
 
 	<section class="container" id="team">
+
+		<div class="row text-center">
+			<dvi class="col-xs-12">
+				<h2 class="section-title">Team</h2>
+			</dvi>
+		</div>
+
+		<div class="row">
+		
+			<div class="col-xs-12 col-sm-4 col-md-4 text-center">
+				<figure>
+					<img src="img/tipo.jpg" alt="foto" class="img-circle">
+				</figure>
+				<h3 class="item-subtitle">Roberto Gómez</h3>
+				<p>Director</p>
+				<div>
+					<i class="fa fa-linkedin redes" aria-hidden="true"></i>
+					<i class="fa fa-facebook redes" aria-hidden="true"></i>
+					<i class="fa fa-twitter redes" aria-hidden="true"></i>
+				</div>
+			</div>
+		
+		
+			<div class="col-xs-12 col-sm-4 col-md-4 text-center">
+				<figure>
+					<img src="img/tipo.jpg" alt="foto" class="img-circle">
+				</figure>
+				<h3 class="item-subtitle">Roberto Gómez</h3>
+				<p>Director</p>
+				<div>
+					<i class="fa fa-linkedin redes" aria-hidden="true"></i>
+					<i class="fa fa-facebook redes" aria-hidden="true"></i>
+					<i class="fa fa-twitter redes" aria-hidden="true"></i>
+				</div>
+			</div>
+		
+
+		
+			<div class="col-xs-12 col-sm-4 col-s-4 col-md-4 text-center">
+				<figure>
+					<img src="img/tipo.jpg" alt="foto" class="img-circle">
+				</figure>
+				<h3 class="item-subtitle">Roberto Gómez</h3>
+				<p>Director</p>
+				<div>
+					<i class="fa fa-linkedin redes" aria-hidden="true"></i>
+					<i class="fa fa-facebook redes" aria-hidden="true"></i>
+					<i class="fa fa-twitter redes" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
 
 	</section>
 
@@ -330,6 +402,45 @@
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<!-- Custom-Scripts -->
 	<script src="js/my-scripts.js"></script>
+
+	<!-- script mapa -->
+	<script type="text/javascript">
+    var locations = [
+      ['<b>Hamburguesas</b>,<br>Corrientes 500', -34.603106, -58.373764, 1],
+      ['<b>Hamburguesas 2</b>,<br>Tucumán 1200', -34.601467, -58.383641, 2],
+      ['<b>Hamburguesas 3</b>,<br>Córdoba 4000', -34.597587, -58.423407, 3],
+      ['<b>Hamburguesas 4</b>,<br>Av. Belgrano 2000', -34.614049, -58.394569, 4],
+      ['<b>Hanburguesas 5</b>,<br>Sarmiento 3000', -34.606478, -58.408693, 5],
+      ['<b>Hamburguesas 6</b>,<br>Hidalgo 1000', -34.607428, -58.441583, 6],    
+    ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: new google.maps.LatLng(-34.604066, -58.407629),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+
+        "icon": 'img/burger-icon.png',
+
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  </script>
 
 </body>
 </html>

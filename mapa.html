@@ -9,20 +9,85 @@
 	<div id="map" style="float:left; width: 705px; height: 480px;"></div>
 
 
+</body>
 	<!-- script mapa + coordenadas -->
-	<script type="text/javascript">
+	 <script type="text/javascript">
     var locations = [
-      ['<b>Hanburguesería 1</b>,<br>Av. San Martin 4723', -34.597497, -58.485249, 1],
-      ['<b>Hamburguesas 2</b>,<br>v Francia 1996', -32.955768, -60.669351, 2],
-      ['<b>Hamburguesa con papas</b>,<br>Boulevard Roca 903', -31.251259, -61.501795, 3],
-      ['<b>Hamburger + Poteitos</b>,<br>Av. Av N Avellaneda 554', -26.828023, -65.196030, 4],
-      ['<b>Hamburguesería</b>,<br>Av. Rodriguez Peña 2175', -32.938422, -68.771067, 5],
-      ['<b>Sánguchde de Paty</b>,<br>Antartida Argentina 2560', -34.803295, -58.435435, 6],    
+      ['<b>Famiq</b>,<br>Av. San Martin 4723', -34.597497, -58.485249, 1],
+      ['<b>Famiq</b>,<br>v Francia 1996', -32.955768, -60.669351, 2],
+      ['<b>Famiq</b>,<br>Boulevard Roca 903', -31.251259, -61.501795, 3],
+      ['<b>Famiq</b>,<br>Av. Av N Avellaneda 554', -26.828023, -65.196030, 4],
+      ['<b>Famiq</b>,<br>Av. Rodriguez Peña 2175', -32.938422, -68.771067, 5],
+      ['<b>Hierros Casanova</b>,<br>Antartida Argentina 2560', -34.803295, -58.435435, 6],
+      ['<b>Hierros Casanova</b>,<br>10 de Septiembre de 1861 Nº 3368', -34.691609, -58.552864, 67],
+      ['<b>Hierros Casanova</b>,<br>Monseñor Bufano 4363', -34.742938, -58.376535, 68],
+      ['<b>Hierros Casanova</b>,<br>Diagonal 101 Nº 6261 (ex ruta 6)', -34.561469, -58.588603, 69],
+      ['<b>Hierros Casanova</b>,<br>Av. Eva Peron 2340', -34.764346, -58.367672, 70],
+      ['<b>Propimat</b>,<br>Av. Alvarez Thomas 1099', -34.578508, -58.457173, 7],
+      ['<b>Pinturerias Rex</b>,<br>Av. San Juan 3270', -34.625028, -58.411543, 8],
+      ['<b>Soldaduras Tigre</b>,<br>Chubut 1430', -34.408220, -58.593624, 9],
+      ['<b>Web Soldaduras</b>,<br>Ad. Mosconi 338', -34.659114, -58.529858, 10],
+      ['<b>Maquisol</b>,<br>Virrey Loreto 3678', -34.579392, -58.458666, 11],
+      ['<b>Maquisol</b>,<br>Av. Hipólio Yrigoyen 15165', -34.830625, -58.399660, 12],
+      ['<b>Maquisol</b>,<br>Av Mitre 1122', -34.162709, -58.966608, 69],
+      ['<b>Soldargen-Cisco</b>,<br>Av. Suárez 1635', -34.638465, -58.373804, 13],
+      ['<b>Bizelar-Tomfort</b>,<br>Mendoza 2086', -34.677255, -58.555313, 14],
+      ['<b>Debenelux</b>,<br>Famatina 1628', -34.630650, -58.705918, 15],
+      ['<b>Insumos FC</b>,<br>Av La Plata 1919', -34.739373, -58.275919, 16],
+      ['<b>Faena</b>,<br>Av Mitre 6130', -34.702445, -58.319420, 17],
+      ['<b>Segunor</b>,<br>Ayacucho 180', -34.716974, -58.283839, 18],
+      ['<b>Soldadoras Rojo</b>,<br>Av. Rosales 1393', -34.720956, -58.403880, 19],
+      ['<b>HL Rodriguez</b>,<br>Av. Gral Frias 1771', -34.777929, -58.423741, 20],
+      ['<b>Oxi Mercedes</b>,<br>Calle 31 Nº 292', -34.655109, -59.434305, 21],
+      ['<b>2S srl</b>,<br>Bron 1035', -38.728752, -62.256740, 22],
+      ['<b>Seyco</b>,<br>Av Independencia 3051', -38.007154, -57.561702, 23],
+      ['<b>Oxitodo</b>,<br>Ayacucho 5994', -33.005764, -60.636004, 24],
+      ['<b>Aceros Cuyo</b>,<br>Belgrano 650', -32.918180, -68.843201, 32],
+      ['<b>Soldquen SRL</b>,<br>Santa Cruz 514', -38.960575, -68.053401, 33],
+      ['<b>AFB Insumos y Soldadura</b>,<br>Buenos Aires 1499', -32.408438, -63.239230, 34],     
+      ['<b>Budai</b>,<br>Tucuman 3159', -32.936743, -60.665352, 35],
+      ['<b>Acerind</b>,<br>Manuel Alberti 2528', -31.601957, -60.692598, 36,],
+      ['<b>Electrodos Córdoba</b>,<br>Av Amadeo Sabattini 2265', -31.432904, -64.155960, 37],
+      ['<b>Juan Carlos Mangieri</b>,<br>Lavalleja 2171', -31.390857, -64.181685, 38],
+      ['<b>Indagro</b>,<br>República de Siria 1040', -31.421843, -64.131400, 39],
+      ['<b>Sudeste Gases</b>,<br>Calle 7 Nº 2339 Parque industrial', -32.701349, -62.104168, 70],
+      ['<b>Julio Gómez</b>,<br>Av Almafuerte y Circunvalación', -31.758699, -60.479982, 71],
+      ['<b>Mantenimientos E. Ríos</b>,<br>9 de Julio 1731', -32.488159, -58.250704, 72],
+      ['<b>Gualeguaychú Gases</b>,<br>Av Santa Catalina 2981', -33.007776, -58.511299, 73],
+      ['<b>Julio Saenz e hijos</b>,<br>Av Belgrano 2199', -26.813130, -65.230512, 41],
+      ['<b>Aceros Cuyo</b>,<br>Belgrano 650', -32.918180, -68.843201, 42],
+      ['<b>Soldquen SRL</b>,<br>Santa Cruz 514', -38.960575, -68.053401, 43],
+      ['<b>Albatros</b>,<br>Juan M. de Rosas 3355', -45.880319, -67.542605, 45],
+      ['<b>Albatros</b>,<br>Juan M. de Rosas 3355', -45.880319, -67.542605, 46],
+      ['<b>Blautek</b>,<br>Condarco 5487', -34.578515, -58.505575, 47],
+      ['<b>Bulones Coiro</b>,<br>Av. Hipólio Yrigoyen 9820', -34.770187, -58.404477, 48],
+      ['<b>Casa Civiera</b>,<br>J A Roca 2132', -34.563548, -58.521381, 49],
+      ['<b>Casa León</b>,<br>Esmeralda 152', -34.771976, -58.394245,50],
+      ['<b>Das SRL</b>,<br>San Martín 3430 of 103', -34.535384, -58.507165, 74],
+      ['<b>Puerto Trans SRL</b>,<br>Lateral Sur Circunvalacion 268', -31.552325, -68.546663, 75],          
+      ['<b>Soldadura Centro</b>,<br>Calle 10 (Ex Guido Spano) Nº 3564', -34.589296, -58.520962, 51],
+      ['<b>Soldasur</b>,<br>Av. San Martín 366', -53.787497, -67.698118, 52],
+      ['<b>Soldasur</b>,<br>Av. Gob. Paz 665', -54.805455, -68.308429, 53],
+      ['<b>Drayser</b>,<br>Magallanes 1985<br>Montevideo<br>Uruguay', -34.894114, -56.185031, 54],
+      ['<b>Armo</b>,<br>Rua XI de Agosto, n° 696<br>Sao Pablo<br>Brasil', -21.167213, -47.802815, 55],
+      ['<b>Correa & Toledo</b>,<br>Avenida Dep. Dante Delmanto n.1386<br>Sao Pablo<br>Brasil', -22.869111, -48.461017, 56],
+      ['<b>Record electric</b>,<br>Avenida Boggiani N° 7367<br>Asunción<br>Paraguay', -25.316042, -57.565401, 57],
+      ['<b>Inoxpar</b>,<br>Av. Defensores del Chaco Nº 467<br>Villa Elisa<br>Paraguay', -25.342402, -57.586474, 58],
+      ['<b>ICOM</b>,<br>Parque Industrial PI36<br>Santa Cruz<br>Bolivia', -17.751976, -63.144775, 59],
+      ['<b>Polimetales</b>,<br>Av. Argentina Nº 2787<br>Lima<br>Perú', -12.046531, -77.076325, 60],
+      ['<b>Representaciones Acaza</b>,<br>Av América N33-62<br>Quito<br>Uruguay', -0.184120, -78.495006, 61],
+      ['<b>Condoven</b>,<br>Urb. Industrial Carabobo 4ta. Transversal Valencia<br>Carabobo<br>Venezuela', 10.175244, -67.984777, 62],
+      ['<b>Mainco</b>,<br>15 Av. “A” 5-21 Z.1<br>Guatemala<br>Guatemala', 14.641102, -90.503641, 63],
+      ['<b>Jaraba</b>,<br>Av. San Martín 209<br>Santo Domingo<br>Rep. Dominicana', 18.484834, -69.916050, 64],
+      ['<b>IHSA</b>,<br>Cale 3 N°1113<br>Concepción<br>Chile', -36.809054, -73.041208, 76],
+      ['<b>Techpam</b>,<br>Condomino Industrial La Nubia - Bodega 83<br>Cali<br>Colombia', 3.441052, -76.459388, 77],
+      ['<b>CGA</b>,<br>Av. 68 N° 37B - 51 Sur<br>Bogotá<br>Colombia', 4.600183, -74.135287, 78],
+
     ];
 
     var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 2,
-      center: new google.maps.LatLng(-7.131277, -63.380745),
+      zoom: 3,
+      center: new google.maps.LatLng(-18.084004, -64.913707),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
@@ -35,7 +100,7 @@
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map,
 
-        "icon": 'img/burger-icon.png',
+        "icon": 'images/map-icon.png',
 
       });
 
@@ -48,5 +113,6 @@
     }
   </script>
 
-</body>
+
+
 </html>

@@ -9,12 +9,12 @@
 @import url(https://fonts.googleapis.com/css?family=Oxygen:400,700%7CBitter:700);
 body {
   font-family: "Oxygen";
-  margin: 0 5%; }
+  margin: 0; }
   body ul, body li {
     decoration: none;
     margin: none; }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Bitter";
   margin: 0; }
 
@@ -28,8 +28,8 @@ a {
 /************************************ */
 /*=========     GLOBAL     ========= */
 /********************************** */
-#services, #top6 {
-  padding: 100px 0; }
+#services, #top6, #about, #team {
+  padding: 100px 0 0 0; }
 
 header figure {
   display: inline-block;
@@ -38,6 +38,14 @@ header figure {
   height: 50px; }
   header figure img {
     width: 100%; }
+
+.section-title {
+  color: #ec232d;
+  font-size: 40px;
+  margin-bottom: 15px; }
+  .section-title + p {
+    font-size: 20px;
+    padding-bottom: 50px; }
 
 /************************************ */
 /*=========     HEADER     ========= */
@@ -50,7 +58,7 @@ header figure {
     color: #ec232d;
     font-family: "Bitter"; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:active, .navbar-default .navbar-brand:focus {
-      color: #ec232d !important; }
+      color: #9f2226 !important; }
   .navbar-default .navbar-toggle {
     border: none;
     background-color: #ec232d;
@@ -62,7 +70,7 @@ header figure {
     color: #fff;
     text-transform: uppercase; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
-      color: #ec232d !important; }
+      color: #9f2226 !important; }
   .navbar-default .navbar-nav > .active > a {
     color: #fae100;
     background-color: transparent !important; }
@@ -70,17 +78,12 @@ header figure {
 #nav-links {
   display: none; }
 
-.mapa {
-  min-height: 300px; }
-
 /************************************ */
 /*=========     BANNER     ========= */
 /********************************** */
-#banner {
-  background-color: #E35959;
-  min-height: 300px;
-  margin-top: 50px;
-  padding-top: 25px;
+#map {
+  min-height: 400px;
+  width: 100%;
   /*solo para que ocupe algo */ }
 
 /************************************** */
@@ -90,29 +93,28 @@ header figure {
   /*	Para probar como queda sin fondo */
   /* background-color: #CB5B38 */
   /*solo para ver */ }
+  #services .row {
+    margin: 0 2%; }
   #services .glyphicon {
-    width: 115px;
-    height: 115px;
+    width: 110px;
+    height: 110px;
     background-color: #fae100;
     border-radius: 50%;
     -webkit-border-radius: 50%;
-    line-height: 115px;
+    line-height: 110px;
     color: #fff !important;
-    font-size: 50px !important; }
-
-.item-subtitle {
-  color: #9f2226;
-  font-size: 20px; }
-  .item-subtitle + p {
-    font-family: "Oxygen";
-    line-height: 25px;
-    margin-bottom: 30px; }
+    font-size: 35px !important; }
+  #services .item-subtitle {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    #services .item-subtitle + p {
+      font-size: 15px; }
 
 /*************************************** */
 /*=========     TOP 6     ========= */
 /************************************* */
 .img-menu {
-  margin: 0 auto 40px;
+  margin: 0 auto 30px;
   max-width: 400px; }
   .img-menu figure {
     position: relative; }
@@ -147,9 +149,32 @@ header figure {
 /*********************************** */
 /*=========     ABOUT     ========= */
 /********************************* */
+#about p {
+  text-align: center;
+  font-size: 15px;
+  margin: 0 2%; }
+
 /********************************** */
 /*=========     TEAM     ========= */
 /******************************** */
+#team .row {
+  margin: 0 2%;
+  margin-top: 50px; }
+#team img {
+  width: 200px; }
+#team .item-subtitle {
+  margin-top: 15px;
+  margin-bottom: 5px; }
+  #team .item-subtitle + p {
+    font-size: 15px; }
+
+.redes {
+  color: #ec232d;
+  margin: 0 5px;
+  font-size: 25px; }
+  .redes:hover, .redes:active, .redes:focus {
+    color: #9f2226 !important; }
+
 /************************************* */
 /*=========     CONTACT     ========= */
 /*********************************** */
@@ -159,5 +184,10 @@ header figure {
 /***************************************** */
 /*=========     MEDIA-QUERIES    ========= */
 /***************************************** */
+#services .glyphicon {
+  margin-top: 30px; }
+
+#team img {
+  margin-top: 50px; }
 
 /*# sourceMappingURL=styles.css.map */
