@@ -22,8 +22,8 @@ header
 		padding-bottom: 50px
 
 .main-title
-	background-color: $main-color
-	color: white
+	background-color: $second-color
+	color: $third-color
 	padding: 20px 0
 
 
@@ -81,6 +81,8 @@ header
 	min-height: 400px
 	width: 100%
 
+.titulo-principal
+	background-color: $second-color
 	/*solo para que ocupe algo*/
 /***************************************/
 /*=========     SERVICES     =========*/
@@ -147,7 +149,7 @@ header
 		&:hover
 			div
 				min-height: 100px
-				background-color: $main-color
+				background: linear-gradient(to top, rgba(236,35,45,0.7), rgba(0,0,0,0))
 
 /************************************/
 /*=========     ABOUT     =========*/
@@ -162,7 +164,7 @@ header
 /*=========     TEAM     =========*/
 /*********************************/
 #team
-	@extend %contenedores
+	margin-top: 30px
 	.row
 		margin: 0 2%
 		margin-top: 50px
@@ -189,8 +191,8 @@ header
 /*=========     CONTACT     =========*/
 /************************************/
 #contact
-	@extend %contenedores
-	
+	margin-top: 60px
+
 	form
 		padding: 15px 30px
 		border-line: none
@@ -207,8 +209,10 @@ header
 			height: 50px
 			font-size: 16px
 			margin-top: 20px
+			padding: 5px 15px
+			+b-ra(7px)
 			background-color: transparent
-			border-bottom: solid 2px #C3BCBC
+			border: solid 1px $third-color
 			color: #333
 			+ttion(300ms)
 			&:focus
@@ -224,33 +228,59 @@ header
 		
 		.red-button
 			font-family: $main-font
-			font-size: 16px
+			font-size: 13px
+			+b-ra(7px)
 			margin: 20px 0 0
-			padding: 10px
+			padding: 15px
+			font-weight: 700
 			background-color: $main-color
-			color: $second-color
+			color: white
+			text-align: center
 /**************************************/
 /*=========     ABOUT     =========*/
 /************************************/
 
+#about
+	p
+		margin-top: 45px
+		text-align: left
+
+.redes-about
+	color: $main-color
+	margin: 0 15px
+	font-size: 35px
+	&:hover,
+	&:active,
+	&:focus
+		color: $third-color !important
 /**************************************/
 /*=========     FOOTER     =========*/
 /************************************/
 #footer
-	@extend %contenedores
-	.row
-		height: 50px
-		background-color: $main-color
+	background-color: $main-color
+	.footer-izq
 		span
 			color: $second-color
 			font-family: $second-font
-			font-size: 15px
+			font-size: 13px
 			padding-top: 15px
+
+		float: left
+		width: 50%
+		text-align: left
+
+	.footer-der
 		a
 			decoration: none
 			color: $second-color 
 			font-family: $second-font
-			font-size: 15px
-		
+			font-size: 13px
 		i
 			color: $second-color
+
+		float: left
+		width: 50%
+		text-align: right
+
+	margin-top: 50px
+	padding: 25px 25px

@@ -25,10 +25,13 @@ figure {
 a {
   outline: none !important; }
 
+input, textarea, button {
+  border-style: none; }
+
 /************************************ */
 /*=========     GLOBAL     ========= */
 /********************************** */
-#services, #top6, #about, #team, #contact, #footer {
+#services, #top6, #about {
   padding: 100px 0 0 0; }
 
 header figure {
@@ -48,8 +51,8 @@ header figure {
     padding-bottom: 50px; }
 
 .main-title {
-  background-color: #ec232d;
-  color: white;
+  background-color: #fae100;
+  color: #9f2226;
   padding: 20px 0; }
 
 /************************************ */
@@ -88,7 +91,10 @@ header figure {
 /********************************** */
 #map {
   min-height: 400px;
-  width: 100%;
+  width: 100%; }
+
+.titulo-principal {
+  background-color: #fae100;
   /*solo para que ocupe algo */ }
 
 /************************************** */
@@ -152,7 +158,7 @@ header figure {
         line-height: 20px; }
     .img-menu figure:hover div {
       min-height: 100px;
-      background-color: #ec232d; }
+      background: linear-gradient(to top, rgba(236, 35, 45, 0.7), transparent); }
 
 /*********************************** */
 /*=========     ABOUT     ========= */
@@ -165,16 +171,18 @@ header figure {
 /********************************** */
 /*=========     TEAM     ========= */
 /******************************** */
-#team .row {
-  margin: 0 2%;
-  margin-top: 50px; }
-#team img {
-  width: 200px; }
-#team .item-subtitle {
-  margin-top: 15px;
-  margin-bottom: 5px; }
-  #team .item-subtitle + p {
-    font-size: 15px; }
+#team {
+  margin-top: 30px; }
+  #team .row {
+    margin: 0 2%;
+    margin-top: 50px; }
+  #team img {
+    width: 200px; }
+  #team .item-subtitle {
+    margin-top: 15px;
+    margin-bottom: 5px; }
+    #team .item-subtitle + p {
+      font-size: 15px; }
 
 .redes {
   color: #ec232d;
@@ -186,71 +194,140 @@ header figure {
 /************************************* */
 /*=========     CONTACT     ========= */
 /*********************************** */
-#contact form {
-  padding: 15px 30px;
-  border-line: none; }
-  #contact form .subtitle {
-    text-align: left; }
-    #contact form .subtitle + p {
-      text-align: left;
-      padding: 0; }
-  #contact form input, #contact form textarea {
-    display: block;
-    width: 100%;
-    height: 50px;
-    font-size: 16px;
-    margin-top: 20px;
-    background-color: transparent;
-    border-bottom: solid 2px #C3BCBC;
-    color: #333;
-    transition: 300ms;
-    -ms-transition: 300ms;
-    -webkit-transition: 300ms; }
-    #contact form input:focus, #contact form textarea:focus {
-      border-bottom-color: #ec232d;
-      color: #ec232d; }
-  #contact form textarea {
-    height: 120px;
-    min-height: 120px;
-    resize: vertical;
-    overflow: hidden; }
-  #contact form .red-button {
-    font-family: "Oxygen";
-    font-size: 16px;
-    margin: 20px 0 0;
-    padding: 10px;
-    background-color: #ec232d;
-    color: #fae100; }
+#contact {
+  margin-top: 60px; }
+  #contact form {
+    padding: 15px 30px;
+    border-line: none; }
+    #contact form .subtitle {
+      text-align: left; }
+      #contact form .subtitle + p {
+        text-align: left;
+        padding: 0; }
+    #contact form input, #contact form textarea {
+      display: block;
+      width: 100%;
+      height: 50px;
+      font-size: 16px;
+      margin-top: 20px;
+      padding: 5px 15px;
+      border-radius: 7px;
+      -webkit-border-radius: 7px;
+      background-color: transparent;
+      border: solid 1px #9f2226;
+      color: #333;
+      transition: 300ms;
+      -ms-transition: 300ms;
+      -webkit-transition: 300ms; }
+      #contact form input:focus, #contact form textarea:focus {
+        border-bottom-color: #ec232d;
+        color: #ec232d; }
+    #contact form textarea {
+      height: 120px;
+      min-height: 120px;
+      resize: vertical;
+      overflow: hidden; }
+    #contact form .red-button {
+      font-family: "Oxygen";
+      font-size: 13px;
+      border-radius: 7px;
+      -webkit-border-radius: 7px;
+      margin: 20px 0 0;
+      padding: 15px;
+      font-weight: 700;
+      background-color: #ec232d;
+      color: white;
+      text-align: center; }
 
 /************************************* */
 /*=========     ABOUT     ========= */
 /*********************************** */
+#about p {
+  margin-top: 45px;
+  text-align: left; }
+
+.redes-about {
+  color: #ec232d;
+  margin: 0 15px;
+  font-size: 35px; }
+  .redes-about:hover, .redes-about:active, .redes-about:focus {
+    color: #9f2226 !important; }
+
 /************************************* */
 /*=========     FOOTER     ========= */
 /*********************************** */
-#footer .row {
-  height: 50px;
-  background-color: #ec232d; }
-  #footer .row span {
-    color: #fae100;
-    font-family: "Bitter";
-    font-size: 15px;
-    padding-top: 15px; }
-  #footer .row a {
-    decoration: none;
-    color: #fae100;
-    font-family: "Bitter";
-    font-size: 15px; }
-  #footer .row i {
-    color: #fae100; }
+#footer {
+  background-color: #ec232d;
+  margin-top: 50px;
+  padding: 25px 25px; }
+  #footer .footer-izq {
+    float: left;
+    width: 50%;
+    text-align: left; }
+    #footer .footer-izq span {
+      color: #fae100;
+      font-family: "Bitter";
+      font-size: 13px;
+      padding-top: 15px; }
+  #footer .footer-der {
+    float: left;
+    width: 50%;
+    text-align: right; }
+    #footer .footer-der a {
+      decoration: none;
+      color: #fae100;
+      font-family: "Bitter";
+      font-size: 13px; }
+    #footer .footer-der i {
+      color: #fae100; }
 
 /***************************************** */
 /*=========     MEDIA-QUERIES    ========= */
 /***************************************** */
-#services .glyphicon {
-  margin-top: 30px; }
+/* Extra Small Devices, Phones */
+@media (min-width: 320px) {
+  .img-menu {
+    margin: 0 auto 30px;
+    max-width: 400px; }
+    .img-menu figure div {
+      max-height: 100px;
+      min-height: 100px; }
+      .img-menu figure div h3 {
+        font-size: 25px;
+        display: inline-block;
+        margin-right: 20px; }
+      .img-menu figure div i {
+        color: white;
+        font-size: 15px; }
+      .img-menu figure div figcaption {
+        font-size: 15px; }
 
-#team img {
-  margin-top: 50px; }
+  #team figure {
+    margin-top: 0; }
+
+  #about {
+    margin-top: 100px;
+    background-color: rgba(220, 221, 222, 0.3);
+    padding-top: 40px;
+    padding-bottom: 50px; }
+    #about p {
+      margin-top: 45px;
+      text-align: center;
+      padding: 0 10px; }
+    #about h2 {
+      font-size: 30px; }
+
+  #contact {
+    margin-top: 0; }
+
+  #footer {
+    margin-top: 0; } }
+/* Small Devices, Tablets */
+@media (min-width: 768px) {
+  .glyphicon {
+    margin-top: 30px; }
+
+  #team img {
+    margin-top: 50px; } }
 
 /*# sourceMappingURL=styles.css.map */

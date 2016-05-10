@@ -1,14 +1,55 @@
 /******************************************/
 /*=========     MEDIA-QUERIES    =========*/
 /******************************************/
-@media (min-width: 768px)
-#services
+/* Extra Small Devices, Phones */ 
+@media (min-width : 320px)
+	.img-menu
+		margin: 0 auto 30px
+		max-width: 400px
+		figure
+			div
+				max-height: 100px
+				min-height: 100px
+				h3
+					font-size: 25px
+					display: inline-block
+					margin-right: 20px
+				i
+					color: white
+					font-size: 15px
+				figcaption
+					font-size: 15px
+
+	#team
+		figure
+			margin-top: 0
+
+	#about
+		margin-top: 100px
+		background-color: rgba(220, 221, 222, 0.3)
+		padding-top: 40px
+		padding-bottom: 50px
+		p
+			margin-top: 45px
+			text-align: center
+			padding: 0 10px
+
+		h2
+			font-size: 30px
+
+	#contact
+		margin-top: 0
+
+	#footer
+		margin-top: 0
+
+
+/* Small Devices, Tablets */
+@media (min-width : 768px)
+	#services
 	.glyphicon
 		margin-top: 30px
 
-#team
-	img
-		margin-top: 50px
-
-
-@media (min-width: 992px)
+	#team
+		img
+			margin-top: 50px
