@@ -20,7 +20,11 @@ header
 	+ p
 		font-size: 20px
 		padding-bottom: 50px
-	
+
+.main-title
+	background-color: $main-color
+	color: white
+	padding: 20px 0
 
 
 
@@ -91,7 +95,7 @@ header
 	.glyphicon
 		width: 110px
 		height: 110px
-		background-color: $second-color
+		background-color: $third-color
 		+b-ra(50%)
 		line-height: 110px
 		color: #fff !important
@@ -119,26 +123,31 @@ header
 		div
 			position: absolute
 			left: 0
-			top: 0
+			bottom: 0
 			width: 100%
-			height: 100%
-			background-color: rgba(254,209,54,0.8)
-			opacity: 0
+			max-height: 35px
+			min-height: 35px
+			background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0))
+			padding: 0 10px
 			+ttion(500ms)
-			span
-				position: absolute
-				left: 50%
-				top: 50%
-				color: #fff
-				font-size: 50px
-				transform: translate(-50%,-50%) scale(0)
-				+ttion(300ms)
+			h3
+				color: white
+				font-size: 30px
+				display: inline-block
+				margin-right: 20px
+			i
+				color: white
+				font-size: 20px
+			figcaption
+				visibility: visible
+				color: white
+				min-height: 50px
+				line-height: 20px
+
 		&:hover
 			div
-				opacity: 1
-				span
-					transform: translate(-50%,-50%) scale(1)
-
+				min-height: 100px
+				background-color: $main-color
 
 /************************************/
 /*=========     ABOUT     =========*/
@@ -179,7 +188,69 @@ header
 /**************************************/
 /*=========     CONTACT     =========*/
 /************************************/
+#contact
+	@extend %contenedores
+	
+	form
+		padding: 15px 30px
+		border-line: none
+		
+		.subtitle
+			text-align: left
+			+ p
+				text-align: left
+				padding: 0
+
+		input, textarea
+			display: block
+			width: 100%
+			height: 50px
+			font-size: 16px
+			margin-top: 20px
+			background-color: transparent
+			border-bottom: solid 2px #C3BCBC
+			color: #333
+			+ttion(300ms)
+			&:focus
+				border-bottom-color: $main-color
+				color: $main-color
+
+		textarea
+			height: 120px
+			min-height: 120px
+			resize: vertical
+			overflow: hidden
+
+		
+		.red-button
+			font-family: $main-font
+			font-size: 16px
+			margin: 20px 0 0
+			padding: 10px
+			background-color: $main-color
+			color: $second-color
+/**************************************/
+/*=========     ABOUT     =========*/
+/************************************/
 
 /**************************************/
 /*=========     FOOTER     =========*/
 /************************************/
+#footer
+	@extend %contenedores
+	.row
+		height: 50px
+		background-color: $main-color
+		span
+			color: $second-color
+			font-family: $second-font
+			font-size: 15px
+			padding-top: 15px
+		a
+			decoration: none
+			color: $second-color 
+			font-family: $second-font
+			font-size: 15px
+		
+		i
+			color: $second-color

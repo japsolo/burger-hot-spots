@@ -28,7 +28,7 @@ a {
 /************************************ */
 /*=========     GLOBAL     ========= */
 /********************************** */
-#services, #top6, #about, #team {
+#services, #top6, #about, #team, #contact, #footer {
   padding: 100px 0 0 0; }
 
 header figure {
@@ -46,6 +46,11 @@ header figure {
   .section-title + p {
     font-size: 20px;
     padding-bottom: 50px; }
+
+.main-title {
+  background-color: #ec232d;
+  color: white;
+  padding: 20px 0; }
 
 /************************************ */
 /*=========     HEADER     ========= */
@@ -98,7 +103,7 @@ header figure {
   #services .glyphicon {
     width: 110px;
     height: 110px;
-    background-color: #fae100;
+    background-color: #9f2226;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     line-height: 110px;
@@ -123,28 +128,31 @@ header figure {
     .img-menu figure div {
       position: absolute;
       left: 0;
-      top: 0;
+      bottom: 0;
       width: 100%;
-      height: 100%;
-      background-color: rgba(254, 209, 54, 0.8);
-      opacity: 0;
+      max-height: 35px;
+      min-height: 35px;
+      background: linear-gradient(to top, black, transparent);
+      padding: 0 10px;
       transition: 500ms;
       -ms-transition: 500ms;
       -webkit-transition: 500ms; }
-      .img-menu figure div span {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        color: #fff;
-        font-size: 50px;
-        transform: translate(-50%, -50%) scale(0);
-        transition: 300ms;
-        -ms-transition: 300ms;
-        -webkit-transition: 300ms; }
+      .img-menu figure div h3 {
+        color: white;
+        font-size: 30px;
+        display: inline-block;
+        margin-right: 20px; }
+      .img-menu figure div i {
+        color: white;
+        font-size: 20px; }
+      .img-menu figure div figcaption {
+        visibility: visible;
+        color: white;
+        min-height: 50px;
+        line-height: 20px; }
     .img-menu figure:hover div {
-      opacity: 1; }
-      .img-menu figure:hover div span {
-        transform: translate(-50%, -50%) scale(1); }
+      min-height: 100px;
+      background-color: #ec232d; }
 
 /*********************************** */
 /*=========     ABOUT     ========= */
@@ -178,9 +186,64 @@ header figure {
 /************************************* */
 /*=========     CONTACT     ========= */
 /*********************************** */
+#contact form {
+  padding: 15px 30px;
+  border-line: none; }
+  #contact form .subtitle {
+    text-align: left; }
+    #contact form .subtitle + p {
+      text-align: left;
+      padding: 0; }
+  #contact form input, #contact form textarea {
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: transparent;
+    border-bottom: solid 2px #C3BCBC;
+    color: #333;
+    transition: 300ms;
+    -ms-transition: 300ms;
+    -webkit-transition: 300ms; }
+    #contact form input:focus, #contact form textarea:focus {
+      border-bottom-color: #ec232d;
+      color: #ec232d; }
+  #contact form textarea {
+    height: 120px;
+    min-height: 120px;
+    resize: vertical;
+    overflow: hidden; }
+  #contact form .red-button {
+    font-family: "Oxygen";
+    font-size: 16px;
+    margin: 20px 0 0;
+    padding: 10px;
+    background-color: #ec232d;
+    color: #fae100; }
+
+/************************************* */
+/*=========     ABOUT     ========= */
+/*********************************** */
 /************************************* */
 /*=========     FOOTER     ========= */
 /*********************************** */
+#footer .row {
+  height: 50px;
+  background-color: #ec232d; }
+  #footer .row span {
+    color: #fae100;
+    font-family: "Bitter";
+    font-size: 15px;
+    padding-top: 15px; }
+  #footer .row a {
+    decoration: none;
+    color: #fae100;
+    font-family: "Bitter";
+    font-size: 15px; }
+  #footer .row i {
+    color: #fae100; }
+
 /***************************************** */
 /*=========     MEDIA-QUERIES    ========= */
 /***************************************** */
