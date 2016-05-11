@@ -92,6 +92,8 @@ header figure {
 #map {
   min-height: 400px;
   width: 100%; }
+  #map h2 {
+    display: none; }
 
 .titulo-principal {
   background-color: #fae100;
@@ -151,7 +153,7 @@ header figure {
       .img-menu figure div i {
         color: white;
         font-size: 20px; }
-      .img-menu figure div figcaption {
+      .img-menu figure div p {
         visibility: visible;
         color: white;
         min-height: 50px;
@@ -196,6 +198,8 @@ header figure {
 /*********************************** */
 #contact {
   margin-top: 60px; }
+  #contact h2 {
+    display: none; }
   #contact form {
     padding: 15px 30px;
     border-line: none; }
@@ -260,6 +264,8 @@ header figure {
   background-color: #ec232d;
   margin-top: 50px;
   padding: 25px 25px; }
+  #footer h2 {
+    display: none; }
   #footer .footer-izq {
     float: left;
     width: 50%;
